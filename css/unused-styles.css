@@ -1,0 +1,69 @@
+/* Неиспользуемые стили */
+.old-layout {
+    float: left;
+    clear: both;
+    width: 100%;
+}
+
+.sidebar {
+    width: 25%;
+    float: left;
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+.main-content {
+    width: 75%;
+    float: right;
+    padding: 20px;
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.old-button {
+    background: #ff6b6b;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.old-card {
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin: 10px 0;
+}
+
+.deprecated-grid {
+    display: table;
+    width: 100%;
+}
+
+.deprecated-cell {
+    display: table-cell;
+    vertical-align: top;
+    padding: 10px;
+}
+
+.unused-animation {
+    animation: rotate360 2s infinite linear;
+}
+
+@keyframes rotate360 {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+.flash-red {
+    background-color: red !important;
+    animation: flash 1s infinite;
+}
+
+@keyframes flash {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+}
